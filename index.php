@@ -87,9 +87,9 @@ $loop->addPeriodicTimer(1, function () use (&$users) {
 
 
 $server = new \React\Http\Server($loop, $requestHandler);
-$socket = new \React\Socket\Server('0.0.0.0:8080', $loop);
+$socket = new \React\Socket\Server(7030, $loop);
 $server->listen($socket);
 
 
-echo 'Server is started. Listing: localhost:8080' . PHP_EOL;
+echo 'Server is started. Listing: localhost:7030' . PHP_EOL;
 $loop->run();
