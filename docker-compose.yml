@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  mainapp:
+    build:
+      context: .
+    ports:
+    - "8080:7030"
+    command: cd src && php index.php
+    container_name: php_react_1
