@@ -4,6 +4,6 @@ services:
     build:
       context: .
     ports:
-    - "7030:7030"
+    - "9000:9000"
     command: php index.php
     container_name: php_react_1
