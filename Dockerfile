@@ -4,4 +4,4 @@ WORKDIR /go/src/app
 
 COPY . .
 
-EXPOSE 8080
+EXPOSE 7030
